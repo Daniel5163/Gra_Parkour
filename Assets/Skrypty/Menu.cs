@@ -8,10 +8,6 @@ public class Menu : MonoBehaviour
 {
     public Button playbutton;
     public Button optionbutton;
-    public Button selectbutton;
-    public Button select1button;
-    public Button select2button;
-    public Button select3button;
     public Canvas menucanvas;
     public Canvas selectlevelcanvas;
     void Start()
@@ -24,10 +20,7 @@ public class Menu : MonoBehaviour
 
         playbutton.onClick.AddListener(Play);
         optionbutton.onClick.AddListener(Option);
-        selectbutton.onClick.AddListener(SelectLevel);
-        select1button.onClick.AddListener(SelectLevel);
-        select2button.onClick.AddListener(SelectLevel);
-        select3button.onClick.AddListener(SelectLevel);
+     
     }
 
    public void Play()
@@ -41,8 +34,5 @@ public class Menu : MonoBehaviour
 
     }
 
-    public void SelectLevel()
-    {
-        SceneManager.LoadScene("Mapa");
-    }
+   
 }

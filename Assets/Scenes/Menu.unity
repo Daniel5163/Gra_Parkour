@@ -2781,10 +2781,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playbutton: {fileID: 1210354437}
   optionbutton: {fileID: 1148444826}
-  selectbutton: {fileID: 86148272}
-  select1button: {fileID: 411881901}
-  select2button: {fileID: 775407824}
-  select3button: {fileID: 220418411}
   menucanvas: {fileID: 1806836856}
   selectlevelcanvas: {fileID: 1418368870}
 --- !u!1 &1870938872
@@ -3119,7 +3115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ec20daace34fb0842b04b0ff19e6a4a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e9c597f2b345034ca289449d61432f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

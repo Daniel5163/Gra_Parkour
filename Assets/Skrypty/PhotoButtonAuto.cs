@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PhotoButtonAuto : MonoBehaviour
 {
@@ -14,5 +15,7 @@ public class PhotoButtonAuto : MonoBehaviour
         }
 
         SelectedPhotoData.photo = imageAbove.sprite.texture;
+
+        SceneManager.LoadScene("Mapa");
     }
 }
