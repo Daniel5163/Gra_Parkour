@@ -1,0 +1,837 @@
+fileFormatVersion: 2
+guid: 4aab34399dbeb164680cdfcc3cf8d4bf
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Bieganie
+      takeName: Armature|Bieganie
+      internalID: 4718922067195790941
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Chodzenie
+      takeName: Armature|Chodzenie
+      internalID: 4981061017433464168
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle1
+      takeName: Armature|Idle1
+      internalID: 2789604289822619476
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Kucanie
+      takeName: Armature|Kucanie
+      internalID: 6040563215633074504
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Skakanie
+      takeName: Armature|Skakanie
+      internalID: 4607538610865230479
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Bone
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Udo.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Udo.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Stopa.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Stopa.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.005
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.006
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.009
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.010
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bark.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bark.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ramie.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ramie.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "R\u0119ka.L"
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "R\u0119ka.R"
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "d\u0142o\u01441.L"
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "d\u0142o\u01441.R"
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.015.L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.016.L
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.017.L
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.015.R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.016.R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.017.R
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.007
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Idlefbx(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Idlefbx(Clone)
+      position: {x: 1.700531, y: 87.127266, z: 5.725168}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 9.790631, y: 9.790631, z: 9.790631}
+    - name: Bone
+      parentName: Armature
+      position: {x: -0.11458385, y: 0.9387557, z: -0.38017404}
+      rotation: {x: 0.7015733, y: -0.008289937, z: 0.014327838, w: 0.712405}
+      scale: {x: 0.99999976, y: 1, z: 1}
+    - name: hip.L
+      parentName: Bone
+      position: {x: 0.000000003259629, y: 1.7382358, z: 0.000000006160917}
+      rotation: {x: -0.030211493, y: 0.11037251, z: 0.8804549, w: 0.46011335}
+      scale: {x: 1.0000019, y: 1.0000018, z: 0.9999999}
+    - name: Udo.L
+      parentName: hip.L
+      position: {x: -0.00000008195639, y: 1.156796, z: 0.00000008195639}
+      rotation: {x: -0.16284034, y: 0.058403928, z: 0.4246423, w: 0.8886793}
+      scale: {x: 1.0000005, y: 1, z: 0.99999934}
+    - name: Noga.L
+      parentName: Udo.L
+      position: {x: 0.00000013038516, y: 4.4072094, z: -0.000000014901161}
+      rotation: {x: -0.03659253, y: -0.000078082085, z: 0.014012994, w: 0.99923205}
+      scale: {x: 1.000002, y: 1.0000026, z: 1.0000001}
+    - name: Stopa.L
+      parentName: Noga.L
+      position: {x: 0.00000014901161, y: 4.765224, z: -0.0000000037252903}
+      rotation: {x: 0.65846497, y: -0.28990892, z: -0.1706115, w: 0.67325217}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000012}
+    - name: Bone.005
+      parentName: Bone
+      position: {x: 0.000000003259629, y: 1.7382358, z: 0.000000006160917}
+      rotation: {x: 0.19116834, y: -0.0229906, z: -0.019856488, w: 0.98108715}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000004}
+    - name: Bone.006
+      parentName: Bone.005
+      position: {x: 9.313226e-10, y: 1.3740277, z: -0.000000029598596}
+      rotation: {x: -0.26087508, y: 0.0044038813, z: 0.018249772, w: 0.96519005}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999996}
+    - name: Bone.007
+      parentName: Bone.006
+      position: {x: -0.0000000055879354, y: 1.3883425, z: -0.00000003405148}
+      rotation: {x: -0.07853877, y: 0.00031199437, z: 0.009669354, w: 0.9968641}
+      scale: {x: 0.9999995, y: 0.9999998, z: 0.9999998}
+    - name: Bone.008
+      parentName: Bone.007
+      position: {x: 0.0000000018626451, y: 1.1809237, z: 0.000000113621354}
+      rotation: {x: 0.111420915, y: -0.01090102, z: -0.021523736, w: 0.9934804}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000004}
+    - name: Bone.009
+      parentName: Bone.008
+      position: {x: 0.000000007450581, y: 1.1390516, z: 0.00000009126961}
+      rotation: {x: 0.19821413, y: -0.02067524, z: -0.004946938, w: 0.97992814}
+      scale: {x: 1.0000001, y: 1.000001, z: 0.9999991}
+    - name: Bone.010
+      parentName: Bone.009
+      position: {x: -0.000000007450581, y: 0.9267964, z: -0.00000058254227}
+      rotation: {x: -0.15038157, y: 0.06492769, z: -0.017642494, w: 0.98633593}
+      scale: {x: 0.99999964, y: 0.99999994, z: 1.000001}
+    - name: Bark.L
+      parentName: Bone.008
+      position: {x: 0.000000007450581, y: 1.1390516, z: 0.00000009126961}
+      rotation: {x: 0.13376354, y: -0.12540264, z: 0.7334313, w: 0.6545687}
+      scale: {x: 1.0000013, y: 1.0000011, z: 0.9999987}
+    - name: Ramie.L
+      parentName: Bark.L
+      position: {x: -0.00000022351742, y: 1.9444015, z: 0.00000009685755}
+      rotation: {x: -0.019373208, y: -0.0037572668, z: -0.031057185, w: 0.99932283}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000013}
+    - name: "R\u0119ka.L"
+      parentName: Ramie.L
+      position: {x: 0.00000071525574, y: 2.6568995, z: -0.00000031292439}
+      rotation: {x: 0.040678162, y: 0.00011456755, z: -0.06107077, w: 0.99730426}
+      scale: {x: 1.0000014, y: 1.0000011, z: 0.99999857}
+    - name: "d\u0142o\u01441.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 0.000000074505806, y: 3.0218172, z: 0.000000055879354}
+      rotation: {x: 0.3713823, y: -0.017776862, z: -0.0577597, w: 0.9265113}
+      scale: {x: 0.9999993, y: 1, z: 1.0000004}
+    - name: Palce.015.L
+      parentName: "d\u0142o\u01441.L"
+      position: {x: -0.00000015646219, y: 0.76024306, z: -0.000000022351742}
+      rotation: {x: -0.027137112, y: -0.04933219, z: 0.07368571, w: 0.99569094}
+      scale: {x: 1.0000025, y: 0.99999964, z: 1.0000007}
+    - name: Palce.016.L
+      parentName: Palce.015.L
+      position: {x: 0.000000052154064, y: 0.2695264, z: 0.00000008940697}
+      rotation: {x: -0.024332989, y: 0.022065891, z: -0.030281208, w: 0.99900156}
+      scale: {x: 0.9999995, y: 0.9999999, z: 1.0000021}
+    - name: Palce.017.L
+      parentName: Palce.016.L
+      position: {x: 0.000000055879354, y: 0.27980465, z: -0.00000029802322}
+      rotation: {x: -0.040068027, y: -0.07784731, z: 0.023848435, w: 0.99587435}
+      scale: {x: 1.0000018, y: 1.0000015, z: 1.0000004}
+    - name: "d\u0142o\u01442.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 0.000000074505806, y: 3.0218172, z: 0.000000055879354}
+      rotation: {x: 0.1438632, y: 0.026865693, z: -0.021614512, w: 0.98899674}
+      scale: {x: 0.9999996, y: 1.000001, z: 1.0000005}
+    - name: Palce.019.L
+      parentName: "d\u0142o\u01442.L"
+      position: {x: 0.000000037252903, y: 1.1629004, z: 0.00000011920929}
+      rotation: {x: -0.07274634, y: -0.16574813, z: 0.126229, w: 0.975347}
+      scale: {x: 1.0000013, y: 0.99999964, z: 1.000001}
+    - name: Palce.020.L
+      parentName: Palce.019.L
+      position: {x: -0.00000004284084, y: 0.37296477, z: 0.00000020489097}
+      rotation: {x: -0.002739779, y: 0.012178016, z: 0.024366366, w: 0.9996252}
+      scale: {x: 1.0000005, y: 1.0000021, z: 0.9999989}
+    - name: Palce.021.L
+      parentName: Palce.020.L
+      position: {x: -0.000000029802322, y: 0.3402768, z: 0.000000078231096}
+      rotation: {x: -0.059282184, y: 0.10197366, z: -0.039958548, w: 0.9922149}
+      scale: {x: 1.0000001, y: 1, z: 1.000002}
+    - name: "d\u0142o\u01443.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 0.000000074505806, y: 3.0218172, z: 0.000000055879354}
+      rotation: {x: 0.05951845, y: -0.055172194, z: 0.026516313, w: 0.9963486}
+      scale: {x: 1.0000001, y: 1.000001, z: 1.0000001}
+    - name: Palce.023.L
+      parentName: "d\u0142o\u01443.L"
+      position: {x: -0.00000008195639, y: 1.1100173, z: 0.00000024645124}
+      rotation: {x: -0.03836647, y: -0.025553873, z: 0.042370636, w: 0.998038}
+      scale: {x: 1.0000012, y: 1.000001, z: 1.0000005}
+    - name: Palce.024.L
+      parentName: Palce.023.L
+      position: {x: 0.000000020489097, y: 0.28496754, z: -0.00000028312206}
+      rotation: {x: 0.00082107965, y: 0.0054294737, z: 0.041234035, w: 0.9991345}
+      scale: {x: 1.0000008, y: 1.0000014, z: 1}
+    - name: Palce.025.L
+      parentName: Palce.024.L
+      position: {x: -0.00000012665987, y: 0.41741347, z: 0.000000074505806}
+      rotation: {x: -0.022591487, y: -0.029773282, z: -0.10456031, w: 0.9938161}
+      scale: {x: 1.000001, y: 1.0000001, z: 0.99999994}
+    - name: "d\u0142o\u01444.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 0.000000074505806, y: 3.0218172, z: 0.000000055879354}
+      rotation: {x: -0.040067293, y: -0.012789407, z: 0.08542585, w: 0.99545646}
+      scale: {x: 0.9999997, y: 1.0000004, z: 1.0000001}
+    - name: Palce.027.L
+      parentName: "d\u0142o\u01444.L"
+      position: {x: -0.00000019214349, y: 1.0549655, z: -0.000000044703484}
+      rotation: {x: 0.040424537, y: 0.016543206, z: -0.03807279, w: 0.9983199}
+      scale: {x: 1.000001, y: 1.0000005, z: 1.0000002}
+    - name: Palce.028.L
+      parentName: Palce.027.L
+      position: {x: 0.00000017881393, y: 0.31714654, z: -0.00000012665987}
+      rotation: {x: -0.020438822, y: -0.07581894, z: -0.051146556, w: 0.99559927}
+      scale: {x: 1.0000008, y: 1.0000011, z: 1.0000004}
+    - name: Palce.029.L
+      parentName: Palce.028.L
+      position: {x: 0.000000074505806, y: 0.30543324, z: 0}
+      rotation: {x: -0.000022551034, y: 0.047019903, z: 0.048362225, w: 0.99772257}
+      scale: {x: 1.0000005, y: 1.0000012, z: 0.9999993}
+    - name: "d\u0142o\u01445.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 0.000000074505806, y: 3.0218172, z: 0.000000055879354}
+      rotation: {x: -0.13488694, y: -0.067372054, z: 0.16173431, w: 0.9752479}
+      scale: {x: 0.9999999, y: 1.0000015, z: 1.0000005}
+    - name: Palce.031.L
+      parentName: "d\u0142o\u01445.L"
+      position: {x: -0.000000022351742, y: 1.032636, z: -0.00000029802322}
+      rotation: {x: 0.13876207, y: 0.079194285, z: -0.09467834, w: 0.9826034}
+      scale: {x: 1.0000002, y: 0.9999981, z: 1.0000008}
+    - name: Palce.032.L
+      parentName: Palce.031.L
+      position: {x: 0.000000055879354, y: 0.3759, z: -0.000000052154064}
+      rotation: {x: 0.0053789597, y: 0.06997146, z: -0.09888973, w: 0.9926208}
+      scale: {x: 1.000001, y: 1.0000017, z: 1.0000004}
+    - name: Palce.033.L
+      parentName: Palce.032.L
+      position: {x: 0.00000017881393, y: 0.23138341, z: -0.00000009685755}
+      rotation: {x: 0.020171244, y: -0.080932595, z: 0.054137785, w: 0.9950438}
+      scale: {x: 1.0000019, y: 1.0000018, z: 1.000001}
+    - name: Bark.R
+      parentName: Bone.008
+      position: {x: 0.105555415, y: 1.1392316, z: -0.0052337376}
+      rotation: {x: 0.097064026, y: 0.15789255, z: -0.7380397, w: 0.64880353}
+      scale: {x: 1.0000011, y: 0.99999905, z: 0.99999887}
+    - name: Ramie.R
+      parentName: Bark.R
+      position: {x: 0.00000014901161, y: 1.9444011, z: -0.0000004786998}
+      rotation: {x: -0.019373123, y: 0.0037572673, z: 0.031056903, w: 0.9993228}
+      scale: {x: 0.99999934, y: 1.0000001, z: 1.0000002}
+    - name: "R\u0119ka.R"
+      parentName: Ramie.R
+      position: {x: -0.0000005364418, y: 2.6569018, z: 0.000000834465}
+      rotation: {x: 0.040678035, y: -0.00011450934, z: 0.061070934, w: 0.9973042}
+      scale: {x: 1.0000014, y: 1.0000013, z: 0.99999875}
+    - name: "d\u0142o\u01441.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -0.0000005811453, y: 3.0218177, z: 0.00000004749745}
+      rotation: {x: 0.37138203, y: 0.017777286, z: 0.057761025, w: 0.9265113}
+      scale: {x: 1.0000007, y: 1.0000014, z: 1.0000007}
+    - name: Palce.015.R
+      parentName: "d\u0142o\u01441.R"
+      position: {x: -0.0000005066395, y: 0.7602432, z: -0.00000011920929}
+      rotation: {x: 0.027136555, y: -0.04933211, z: 0.07368302, w: -0.9956911}
+      scale: {x: 1.0000013, y: 1.0000001, z: 1.000001}
+    - name: Palce.016.R
+      parentName: Palce.015.R
+      position: {x: 0.0000014603138, y: 0.26952642, z: -0.00000025331974}
+      rotation: {x: -0.02433146, y: -0.02206634, z: 0.03027677, w: 0.99900174}
+      scale: {x: 1.1615043, y: 1.161504, z: 1.1615058}
+    - name: Palce.017.R
+      parentName: Palce.016.R
+      position: {x: 0.00000029802322, y: 0.27980477, z: -0.0000003427267}
+      rotation: {x: -0.040067974, y: 0.077847384, z: -0.023848265, w: 0.9958743}
+      scale: {x: 0.72154635, y: 0.72154605, z: 0.7215464}
+    - name: "d\u0142o\u01442.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -0.0000005811453, y: 3.0218177, z: 0.00000004749745}
+      rotation: {x: 0.14386329, y: -0.026865695, z: 0.02161437, w: 0.98899674}
+      scale: {x: 1.0000017, y: 1.0000014, z: 1.0000008}
+    - name: Palce.019.R
+      parentName: "d\u0142o\u01442.R"
+      position: {x: -0.00000017881393, y: 1.1629015, z: 0.00000031292439}
+      rotation: {x: -0.072746344, y: 0.16574818, z: -0.12622912, w: 0.975347}
+      scale: {x: 0.99999994, y: 1, z: 1.0000002}
+    - name: Palce.020.R
+      parentName: Palce.019.R
+      position: {x: -0.00000028312206, y: 0.37296498, z: 0.00000010244548}
+      rotation: {x: -0.0027398379, y: -0.012178117, z: -0.024366148, w: 0.9996252}
+      scale: {x: 1.0000018, y: 1.0000012, z: 0.9999999}
+    - name: Palce.021.R
+      parentName: Palce.020.R
+      position: {x: 0.0000007301569, y: 0.34027654, z: -0.0000004917383}
+      rotation: {x: -0.059282035, y: -0.10197371, z: 0.039958425, w: 0.9922149}
+      scale: {x: 1.0409765, y: 1.0409787, z: 1.0409788}
+    - name: "d\u0142o\u01443.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -0.0000005811453, y: 3.0218177, z: 0.00000004749745}
+      rotation: {x: 0.059518527, y: 0.055172086, z: -0.026516393, w: 0.9963486}
+      scale: {x: 1.0000014, y: 1.0000015, z: 1.0000001}
+    - name: Palce.023.R
+      parentName: "d\u0142o\u01443.R"
+      position: {x: 0.00000017881393, y: 1.1100163, z: -0.00000043958426}
+      rotation: {x: -0.03836655, y: 0.02555403, z: -0.042370763, w: 0.998038}
+      scale: {x: 1.0000013, y: 1.0000019, z: 0.99999946}
+    - name: Palce.024.R
+      parentName: Palce.023.R
+      position: {x: 0.00000017881393, y: 0.28496832, z: -0.00000010430813}
+      rotation: {x: 0.0008212624, y: -0.0054295347, z: -0.04123404, w: 0.9991345}
+      scale: {x: 0.99999976, y: 1, z: 1.0000005}
+    - name: Palce.025.R
+      parentName: Palce.024.R
+      position: {x: 0.000000059604645, y: 0.41741383, z: -0.00000029802322}
+      rotation: {x: -0.022591595, y: 0.029773233, z: 0.104560375, w: 0.993816}
+      scale: {x: 1.1521912, y: 1.1521904, z: 1.1521884}
+    - name: "d\u0142o\u01444.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -0.0000005811453, y: 3.0218177, z: 0.00000004749745}
+      rotation: {x: -0.040067255, y: 0.012789379, z: -0.08542588, w: 0.9954564}
+      scale: {x: 1.0000008, y: 1.000001, z: 1.0000004}
+    - name: Palce.027.R
+      parentName: "d\u0142o\u01444.R"
+      position: {x: -0.00000047683716, y: 1.054966, z: -0.00000008940697}
+      rotation: {x: 0.040424667, y: -0.016543137, z: 0.038072675, w: 0.9983199}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000001}
+    - name: Palce.028.R
+      parentName: Palce.027.R
+      position: {x: -0, y: 0.3171463, z: 0.00000043213367}
+      rotation: {x: -0.02043892, y: 0.075819045, z: 0.05114652, w: 0.99559927}
+      scale: {x: 1.0000011, y: 1.0000006, z: 0.999999}
+    - name: Palce.029.R
+      parentName: Palce.028.R
+      position: {x: 0.00000008940697, y: 0.30543375, z: -0.00000008940697}
+      rotation: {x: -0.000022556622, y: -0.047020085, z: -0.048362087, w: 0.99772257}
+      scale: {x: 0.9999999, y: 1.000001, z: 1.0000018}
+    - name: "d\u0142o\u01445.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -0.0000005811453, y: 3.0218177, z: 0.00000004749745}
+      rotation: {x: -0.13488689, y: 0.067372166, z: -0.16173445, w: 0.97524786}
+      scale: {x: 1.0000007, y: 1.000001, z: 1.0000006}
+    - name: Palce.031.R
+      parentName: "d\u0142o\u01445.R"
+      position: {x: 0.0000010728836, y: 1.0326358, z: 0.00000008940697}
+      rotation: {x: 0.13876216, y: -0.07919445, z: 0.09467835, w: 0.98260343}
+      scale: {x: 1.0000006, y: 1, z: 1.0000006}
+    - name: Palce.032.R
+      parentName: Palce.031.R
+      position: {x: -0.00000023841858, y: 0.3758998, z: -0.00000033527613}
+      rotation: {x: 0.00537896, y: -0.069971465, z: 0.098889686, w: 0.99262077}
+      scale: {x: 1.0000014, y: 1.0000012, z: 1.000001}
+    - name: Palce.033.R
+      parentName: Palce.032.R
+      position: {x: -0.00000035762787, y: 0.2313832, z: -0.00000016577542}
+      rotation: {x: 0.020171206, y: 0.08093276, z: -0.05413776, w: 0.99504375}
+      scale: {x: 1.0000005, y: 1.0000019, z: 1}
+    - name: hip.R
+      parentName: Bone
+      position: {x: -0.0067996657, y: 1.7384539, z: -0.00005640898}
+      rotation: {x: 0.026430815, y: 0.1131593, z: 0.8949679, w: -0.43073058}
+      scale: {x: 1.0000019, y: 1.0000019, z: 0.9999997}
+    - name: Udo.R
+      parentName: hip.R
+      position: {x: 0.00000014156103, y: 1.156796, z: -0.000000018626451}
+      rotation: {x: -0.16284026, y: -0.058403946, z: -0.4246424, w: 0.88867927}
+      scale: {x: 1.0000013, y: 1.0000002, z: 0.99999934}
+    - name: Noga.R
+      parentName: Udo.R
+      position: {x: -0.000000346452, y: 4.4072113, z: -0.00000017695129}
+      rotation: {x: -0.03659257, y: 0.00007810443, z: -0.014012955, w: 0.999232}
+      scale: {x: 1.0000025, y: 1.0000039, z: 1.0000001}
+    - name: Stopa.R
+      parentName: Noga.R
+      position: {x: 0.000000007450581, y: 4.7652235, z: -0.00000011175871}
+      rotation: {x: 0.6584649, y: 0.28990877, z: 0.17061149, w: 0.67325217}
+      scale: {x: 1.0000004, y: 1.0000013, z: 1.0000007}
+    - name: IKarm.L
+      parentName: Armature
+      position: {x: -3.0236235, y: 0.5686756, z: -0.2057805}
+      rotation: {x: 0.8092613, y: -0.000000059604645, z: 0.58744884, w: -0.00000011920929}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999999}
+    - name: IK.L
+      parentName: Armature
+      position: {x: -0.84508646, y: 1.0738058, z: -8.484385}
+      rotation: {x: -0.015256968, y: -0.99680096, z: 0.017787429, w: 0.07641123}
+      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999976}
+    - name: PV.L
+      parentName: Armature
+      position: {x: -0.98036647, y: -1.1608691, z: -3.715409}
+      rotation: {x: -0.095226996, y: -0.0000001192093, z: 0.9954556, w: 0.0000000074505815}
+      scale: {x: 1.000001, y: 1.0000001, z: 1.0000001}
+    - name: IK.R
+      parentName: Armature
+      position: {x: 0.84508646, y: 1.0738058, z: -8.468166}
+      rotation: {x: 0.015256968, y: -0.99680096, z: 0.017787429, w: -0.07641123}
+      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999976}
+    - name: PV.R
+      parentName: Armature
+      position: {x: 0.98036647, y: -1.1608691, z: -3.7207587}
+      rotation: {x: 0.095226996, y: -0.0000001192093, z: 0.9954556, w: -0.0000000074505815}
+      scale: {x: 1.000001, y: 1.0000001, z: 1.0000001}
+    - name: PVarm.L
+      parentName: Armature
+      position: {x: -4.6203814, y: 4.704401, z: 5.868889}
+      rotation: {x: 0.000000059604645, y: -0.8186006, z: -0.00000014901161, w: 0.57436323}
+      scale: {x: 1.0000008, y: 0.9999998, z: 1.0000007}
+    - name: IKarm.R
+      parentName: Armature
+      position: {x: 2.8131514, y: 0.42844915, z: -0.11665249}
+      rotation: {x: 0.8092613, y: 0.000000059604645, z: -0.58744884, w: -0.00000011920929}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999999}
+    - name: PVarm.R
+      parentName: Armature
+      position: {x: 4.6203814, y: 4.704401, z: 5.868889}
+      rotation: {x: -0.000000059604645, y: -0.8186006, z: -0.00000014901161, w: -0.57436323}
+      scale: {x: 1.0000008, y: 0.9999998, z: 1.0000007}
+    - name: MocapGuy_Body
+      parentName: Idlefbx(Clone)
+      position: {x: 1.850939, y: 0.0000076293945, z: -0.0000042915344}
+      rotation: {x: -0.008341733, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: MocapGuy_BrowsLashes
+      parentName: Idlefbx(Clone)
+      position: {x: 1.8509392, y: 0.0000076293945, z: -0.0000042915344}
+      rotation: {x: -0.008341674, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: MocapGuy_Caruncula
+      parentName: Idlefbx(Clone)
+      position: {x: 1.8509398, y: 0.0000076293945, z: -0.0000014305115}
+      rotation: {x: -0.008341674, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: MocapGuy_Eyes
+      parentName: Idlefbx(Clone)
+      position: {x: 1.8509392, y: 0.0000076293945, z: -0.0000042915344}
+      rotation: {x: -0.008341674, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

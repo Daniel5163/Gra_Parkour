@@ -9,6 +9,12 @@ TagManager:
   - Ledge
   - ParkourObject
   - Street
+  - Platform
+  - Obstacle
+  - Bridge
+  - MovingPlatform
+  - WallRun
+  - JumpPad
   layers:
   - Default
   - TransparentFX

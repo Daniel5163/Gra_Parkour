@@ -7,13 +7,15 @@ public class Moving : MonoBehaviour
     [Header("Ruch")]
     public float walkSpeed = 5f;
     public float runSpeed = 9f;
+    public float crouchSpeedMultiplier = 0.5f;
     public float jumpForce = 5f;
+    public Animator animator;
 
     [Header("Stamina")]
     public float maxStamina = 100f;
     public float staminaDrain = 20f;
     public float staminaRegen = 15f;
-    public float staminaRegenDelay = 1.2f;    
+    public float staminaRegenDelay = 1.2f;
 
     [Header("UI")]
     public Slider staminaSlider;
@@ -24,25 +26,27 @@ public class Moving : MonoBehaviour
     public float mouseSensitivity = 200f;
     public Transform cameraTransform;
 
-    private Rigidbody rb;
-    private bool isGrounded;
-    private float currentStamina;
-    private float xRotation = 0f;
-    private float yRotation = 0f;
-    private float timeSinceLastRun = 0f;
+    [Header("Ground Check")]
+    public float groundCheckDistance = 0.4f;
+    public LayerMask groundMask;
 
+    private Rigidbody rb;
+    private float currentStamina;
+    private float timeSinceLastRun;
     private float moveX;
     private float moveZ;
+    private float xRotation;
+    private float yRotation;
+    private bool isGrounded;
+    public bool isCrouching;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
         rb.freezeRotation = true;
-        rb.useGravity = true;
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
         currentStamina = maxStamina;
 
         if (staminaSlider != null)
@@ -50,7 +54,6 @@ public class Moving : MonoBehaviour
             staminaSlider.maxValue = maxStamina;
             staminaSlider.value = currentStamina;
         }
-
         UpdateStaminaUI();
     }
 
@@ -60,9 +63,11 @@ public class Moving : MonoBehaviour
         moveZ = Input.GetAxis("Vertical");
 
         RotateCamera();
+        HandleCrouch();
         Jump();
         HandleStamina();
         UpdateSpeedUI();
+        HandleAnimations();
     }
 
     void FixedUpdate()
@@ -74,21 +79,40 @@ public class Moving : MonoBehaviour
     {
         bool movingForward = moveZ > 0f;
         bool wantsToRun = Input.GetKey(KeyCode.LeftShift) && movingForward;
-        bool canRun = currentStamina > 2f;                    
+        bool canRun = currentStamina > 2f;
+        bool isRunning = wantsToRun && canRun && !isCrouching;
 
-        bool isRunning = wantsToRun && canRun;
-
-        float currentSpeed = isRunning ? runSpeed : walkSpeed;
+        float currentSpeed = isCrouching ? walkSpeed * crouchSpeedMultiplier :
+                             isRunning ? runSpeed : walkSpeed;
 
         Vector3 moveDirection = transform.forward * moveZ + transform.right * moveX;
-
-        if (moveDirection.magnitude > 0.1f)
+        if (moveDirection.magnitude > 1f)
             moveDirection.Normalize();
 
         Vector3 velocity = moveDirection * currentSpeed;
-        velocity.y = rb.velocity.y;           
-
+        velocity.y = rb.velocity.y;
         rb.velocity = velocity;
+    }
+
+    void Jump()
+    {
+        isGrounded = Physics.Raycast(
+            transform.position + Vector3.up * 0.1f,
+            Vector3.down,
+            groundCheckDistance,
+            groundMask
+        );
+
+        if (Input.GetButtonDown("Jump")  && !isCrouching)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+    }
+
+    void HandleCrouch()
+    {
+        isCrouching = Input.GetKey(KeyCode.LeftControl);
     }
 
     void HandleStamina()
@@ -96,7 +120,7 @@ public class Moving : MonoBehaviour
         bool movingForward = moveZ > 0f;
         bool wantsToRun = Input.GetKey(KeyCode.LeftShift) && movingForward;
 
-        if (wantsToRun && currentStamina > 0f)
+        if (wantsToRun && currentStamina > 0f && !isCrouching)
         {
             currentStamina -= staminaDrain * Time.deltaTime;
             timeSinceLastRun = 0f;
@@ -104,7 +128,6 @@ public class Moving : MonoBehaviour
         else
         {
             timeSinceLastRun += Time.deltaTime;
-
             if (timeSinceLastRun >= staminaRegenDelay)
             {
                 currentStamina += staminaRegen * Time.deltaTime;
@@ -113,32 +136,6 @@ public class Moving : MonoBehaviour
 
         currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
         UpdateStaminaUI();
-    }
-
-    void UpdateStaminaUI()
-    {
-        if (staminaSlider != null)
-            staminaSlider.value = currentStamina;
-
-        if (staminaFill != null)
-        {
-            float percent = currentStamina / maxStamina;
-
-            if (percent > 0.5f)
-                staminaFill.color = Color.green;
-            else if (percent > 0.25f)
-                staminaFill.color = Color.yellow;
-            else
-                staminaFill.color = Color.red;
-        }
-    }
-
-    void UpdateSpeedUI()
-    {
-        if (speedText == null) return;
-
-        float horizontalSpeed = new Vector3(rb.velocity.x, 0f, rb.velocity.z).magnitude;
-        speedText.text = "Speed: " + horizontalSpeed.ToString("F1");
     }
 
     void RotateCamera()
@@ -154,29 +151,58 @@ public class Moving : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
     }
 
-    void Jump()
+    void HandleAnimations()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        bool moving = moveX != 0 || moveZ != 0;
+        bool running = Input.GetKey(KeyCode.LeftShift) && moveZ > 0 && currentStamina > 2f && !isCrouching;
+        bool jumping = rb.velocity.y > 0.1f;
+
+        if (isCrouching)
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
+            animator.SetBool("IsCrouch", true);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsJumping", false);
+        }
+        else
+        {
+            animator.SetBool("IsCrouch", false);
+
+            bool walking = moving && !running && !jumping;
+
+            animator.SetBool("IsWalking", walking);
+            animator.SetBool("IsRunning", running);
+            animator.SetBool("IsJumping", jumping);
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    void UpdateSpeedUI()
     {
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            if (Vector3.Dot(contact.normal, Vector3.up) > 0.7f)   
-            {
-                isGrounded = true;
-                return;
-            }
-        }
+        if (speedText == null) return;
+        float speed = new Vector3(rb.velocity.x, 0f, rb.velocity.z).magnitude;
+        speedText.text = "Speed: " + speed.ToString("F1");
     }
 
-    private void OnCollisionExit(Collision collision)
+    void UpdateStaminaUI()
     {
-        isGrounded = false;
+        if (staminaSlider != null)
+            staminaSlider.value = currentStamina;
+
+        if (staminaFill != null)
+        {
+            float percent = currentStamina / maxStamina;
+            staminaFill.color = percent > 0.5f ? Color.green :
+                               percent > 0.25f ? Color.yellow : Color.red;
+        }
     }
+}
+
+
+
+
+
+
+public static class SelectedPhotoData
+{
+    public static Texture2D selectedTexture;
 }

@@ -195,6 +195,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 8b035b022976550458790052d4341de0, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 8b035b022976550458790052d4341de0, type: 3}
+    - target: {fileID: 5866666021909216657, guid: 8b035b022976550458790052d4341de0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dae0e8be176f4e94899356818a95ebc4, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 8b035b022976550458790052d4341de0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7036213049465896255, guid: 8b035b022976550458790052d4341de0, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -240,7 +252,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 9
+  crouchSpeedMultiplier: 0.5
   jumpForce: 15
+  animator: {fileID: 5866666021909216657, guid: 4aab34399dbeb164680cdfcc3cf8d4bf, type: 3}
   maxStamina: 100
   staminaDrain: 20
   staminaRegen: 15
@@ -250,6 +264,11 @@ MonoBehaviour:
   speedText: {fileID: 477809755}
   mouseSensitivity: 200
   cameraTransform: {fileID: 2088620885}
+  groundCheckDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  isCrouching: 0
 --- !u!136 &21450920
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -732,6 +751,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477809753}
   m_CullTransparentMesh: 1
+--- !u!1 &609987058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609987060}
+  - component: {fileID: 609987059}
+  - component: {fileID: 609987061}
+  - component: {fileID: 609987062}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &609987059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609987058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90574fffa70e4d545b0dfcb16c044394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMapTexture: {fileID: 0}
+  scale: 1
+  minHeight: 3
+  maxHeight: 7
+  heightVariation: 5
+  minIslandSize: 35
+  maxIslandSize: 15000
+  maxAspectRatio: 10
+  blurRadius: 2
+  contrast: 1.75
+  edgeStrength: 1.6
+  morphRadius: 1
+  minFillDensity: 0.68
+  graph: {fileID: 609987061}
+--- !u!4 &609987060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609987058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 144.5867, y: -99.59712, z: -64.112305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609987061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609987058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa98cbcef0a0154ab89d1a457f0be43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roofPoints: []
+  maxJumpDistance: 8
+  maxUp: 4
+  maxDown: 6
+--- !u!114 &609987062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609987058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef7f628100a40a4e99db5459ffb5fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMapTexture: {fileID: 0}
+  scale: 1
+  groundMaterial: {fileID: 2100000, guid: 719e3a03fe9a9a14d98622f642294a23, type: 2}
+  groundOffset: -0.1
 --- !u!1 &1188536197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1914579757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,14 +1176,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallbackPhoto: {fileID: 0}
   worldSize: 180
-  objectsPerFrame: 70
-  minRegionSize: 18
-  minBuildingSize: 1.5
-  maxAspectRatio: 4.5
-  minHeight: 4
-  maxHeight: 10
+  objectsPerFrame: 60
+  minRegionSize: 150
+  minBuildingSize: 3
+  maxAspectRatio: 5
+  minHeight: 6
+  maxHeight: 50
   similarityThreshold: 55
-  greenThreshold: 0.42
+  greenThreshold: 0.25
   minSpawnRadius: 8
   maxSpawnAttempts: 1000
 --- !u!4 &1914579758
@@ -1266,3 +1377,4 @@ SceneRoots:
   - {fileID: 21450916}
   - {fileID: 1816236654}
   - {fileID: 1746824824}
+  - {fileID: 609987060}
