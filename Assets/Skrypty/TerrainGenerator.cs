@@ -3,92 +3,80 @@ using UnityEngine;
 public class TerrainGenerator : MonoBehaviour
 {
     public Texture2D defaultMapTexture;
-    public float scale = 1f;
+    public float scale = 1.35f;
 
     [Header("Ground")]
-    public Material groundMaterial;
-    public float groundOffset = -0.1f;
+   
+    public float groundOffset = -0.15f;
 
     void Start()
     {
-        Texture2D mapTexture = SelectedPhotoData.selectedTexture != null ?
-                               SelectedPhotoData.selectedTexture :
-                               defaultMapTexture;
+        Texture2D mapTexture = SelectedPhotoData.selectedTexture != null
+            ? SelectedPhotoData.selectedTexture
+            : defaultMapTexture;
 
         if (mapTexture == null)
         {
-            Debug.LogError("Brak tekstury mapy dla terenu!");
+            Debug.LogError("Brak tekstury mapy!");
             return;
         }
 
-        GenerateTerrain(mapTexture);
-        CreateGround(mapTexture);
+        CreateColoredGround(mapTexture);
     }
 
-    void GenerateTerrain(Texture2D mapTexture)
+    void CreateColoredGround(Texture2D mapTexture)
     {
         int w = mapTexture.width;
         int h = mapTexture.height;
+        float totalW = w * scale;
+        float totalH = h * scale;
+
+        int divX = Mathf.Min(w, 256);
+        int divZ = Mathf.Min(h, 256);
 
         Mesh mesh = new Mesh();
-        Vector3[] vertices = new Vector3[w * h];
-        Vector2[] uv = new Vector2[w * h];
-        int[] triangles = new int[(w - 1) * (h - 1) * 6];
+        mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
 
-        int i = 0;
-        for (int y = 0; y < h; y++)
-            for (int x = 0; x < w; x++)
+        Vector3[] verts = new Vector3[(divX + 1) * (divZ + 1)];
+        Vector2[] uvs = new Vector2[(divX + 1) * (divZ + 1)];
+        int[] tris = new int[divX * divZ * 6];
+
+        for (int z = 0; z <= divZ; z++)
+            for (int x = 0; x <= divX; x++)
             {
-                vertices[i] = new Vector3(x * scale, 0, y * scale);
-                uv[i] = new Vector2((float)x / w, (float)y / h);
-                i++;
+                int idx = z * (divX + 1) + x;
+                verts[idx] = new Vector3(x * totalW / divX, 0f, z * totalH / divZ);
+                uvs[idx] = new Vector2((float)x / divX, (float)z / divZ);
             }
 
         int t = 0;
-        for (int y = 0; y < h - 1; y++)
-            for (int x = 0; x < w - 1; x++)
+        for (int z = 0; z < divZ; z++)
+            for (int x = 0; x < divX; x++)
             {
-                int i0 = x + y * w;
-                int i1 = i0 + 1;
-                int i2 = i0 + w;
-                int i3 = i2 + 1;
-
-                triangles[t++] = i0;
-                triangles[t++] = i2;
-                triangles[t++] = i1;
-
-                triangles[t++] = i1;
-                triangles[t++] = i2;
-                triangles[t++] = i3;
+                int i0 = z * (divX + 1) + x;
+                tris[t++] = i0;
+                tris[t++] = i0 + divX + 1;
+                tris[t++] = i0 + 1;
+                tris[t++] = i0 + 1;
+                tris[t++] = i0 + divX + 1;
+                tris[t++] = i0 + divX + 2;
             }
 
-        mesh.vertices = vertices;
-        mesh.uv = uv;
-        mesh.triangles = triangles;
+        mesh.vertices = verts;
+        mesh.uv = uvs;
+        mesh.triangles = tris;
         mesh.RecalculateNormals();
 
-        GameObject terrainObj = new GameObject("Terrain");
-        terrainObj.AddComponent<MeshFilter>().mesh = mesh;
-        terrainObj.AddComponent<MeshRenderer>().material = groundMaterial;
-    }
+        Material mat = new Material(Shader.Find("Standard"));
+        mat.mainTexture = mapTexture;
+        mat.SetFloat("_Glossiness", 0f);
+        mat.SetFloat("_Metallic", 0f);
 
-    void CreateGround(Texture2D mapTexture)
-    {
-        GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
-        float width = mapTexture.width * scale;
-        float height = mapTexture.height * scale;
+        GameObject ground = new GameObject("Ground");
+        ground.AddComponent<MeshFilter>().mesh = mesh;
+        ground.AddComponent<MeshRenderer>().material = mat;
+        ground.AddComponent<MeshCollider>().sharedMesh = mesh;
 
-        ground.transform.position = new Vector3(width / 2f, groundOffset, height / 2f);
-        ground.transform.localScale = new Vector3(width / 10f, 1f, height / 10f);
-        ground.name = "Ground";
-
-        var renderer = ground.GetComponent<Renderer>();
-        if (groundMaterial != null)
-            renderer.material = groundMaterial;
-        else
-        {
-            renderer.material = new Material(Shader.Find("Standard"));
-            renderer.material.color = new Color(0.2f, 0.25f, 0.2f);
-        }
+        ground.transform.position = new Vector3(0f, groundOffset, 0f);
     }
 }

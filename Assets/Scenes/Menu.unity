@@ -458,7 +458,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1891113764}
   m_Direction: 2
   m_Value: 1.0000005
-  m_Size: 0.19999996
+  m_Size: 0.3999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -682,7 +682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0003978534}
+  m_AnchoredPosition: {x: 0, y: -0.00039672852}
   m_SizeDelta: {x: 0, y: 1000}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &317762741
@@ -2453,6 +2453,7 @@ GameObject:
   - component: {fileID: 1418368870}
   - component: {fileID: 1418368869}
   - component: {fileID: 1418368868}
+  - component: {fileID: 1418368872}
   m_Layer: 5
   m_Name: SelectLevel
   m_TagString: Untagged
@@ -2543,6 +2544,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1418368872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418368867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb874eca8a75c141834ac03c0765021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnOpenGoogleEarth: {fileID: 587356112}
+  labelInfo: {fileID: 0}
 --- !u!1 &1419391561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,7 +3330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39cfd75a8270af54181a1f1047de00bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e21c48531efb75943b45e1accbdb0fc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3507,7 +3522,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 200}
+  m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082224572
 MonoBehaviour:

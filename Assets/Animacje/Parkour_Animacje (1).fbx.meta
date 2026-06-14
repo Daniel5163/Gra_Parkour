@@ -1,0 +1,1098 @@
+fileFormatVersion: 2
+guid: a9252f3bcb9588e41a7d956e98655476
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Armature|przewr\xF3t do przodu' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bone.008' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\nClip 'Armature|skok
+      z obrotem' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Bone.008'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Bieganie
+      takeName: Armature|Bieganie
+      internalID: 4718922067195790941
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Chodzenie
+      takeName: Armature|Chodzenie
+      internalID: 4981061017433464168
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      internalID: -8945691123924629249
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Kucanie
+      takeName: Armature|Kucanie
+      internalID: 6040563215633074504
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Armature|przewr\xF3t do przodu"
+      takeName: "Armature|przewr\xF3t do przodu"
+      internalID: 2400767183600213420
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Skakanie
+      takeName: Armature|Skakanie
+      internalID: 4607538610865230479
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|skok z obrotem
+      takeName: Armature|skok z obrotem
+      internalID: 2589093124286086008
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Armature|Wspianie po \u015Bcianie"
+      takeName: "Armature|Wspianie po \u015Bcianie"
+      internalID: 6563048980186639129
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Armature|wspi\u0119cie z rogu"
+      takeName: "Armature|wspi\u0119cie z rogu"
+      internalID: 4583855639722524055
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Wstawanie
+      takeName: Armature|Wstawanie
+      internalID: 1312494129933620004
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Bone
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Udo.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Udo.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Stopa.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Stopa.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.005
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.006
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.009
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.010
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bark.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bark.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ramie.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ramie.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "R\u0119ka.L"
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "R\u0119ka.R"
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "d\u0142o\u01441.L"
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "d\u0142o\u01441.R"
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.015.L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.016.L
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.017.L
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.015.R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.016.R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palce.017.R
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone.007
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Parkour_Animacje (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Parkour_Animacje (1)(Clone)
+      position: {x: 1.700531, y: 87.127266, z: 5.725168}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 979.0631, y: 979.0631, z: 979.0631}
+    - name: MocapGuy_HiRes_Meshes
+      parentName: Armature
+      position: {x: 0.00015362546, y: 0.0058475994, z: -0.08899043}
+      rotation: {x: 0.99996525, y: 0, z: -0, w: 0.008341769}
+      scale: {x: 0.0010213846, y: 0.0010213846, z: 0.0010213846}
+    - name: Bone
+      parentName: Armature
+      position: {x: -0.0011458406, y: 0.009387557, z: -0.0038017407}
+      rotation: {x: 0.7015733, y: -0.008289932, z: 0.014327831, w: 0.712405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip.L
+      parentName: Bone
+      position: {x: 3.259629e-11, y: 0.017382357, z: 6.160917e-11}
+      rotation: {x: -0.030211478, y: 0.11037251, z: 0.8804549, w: 0.4601134}
+      scale: {x: 1.0000015, y: 1.0000008, z: 0.9999999}
+    - name: Udo.L
+      parentName: hip.L
+      position: {x: -8.1956386e-10, y: 0.01156796, z: 8.1956386e-10}
+      rotation: {x: -0.16284032, y: 0.058403943, z: 0.42464232, w: 0.8886793}
+      scale: {x: 1.0000006, y: 1.000001, z: 1}
+    - name: Noga.L
+      parentName: Udo.L
+      position: {x: 0.0000000013038516, y: 0.04407209, z: -1.4901161e-10}
+      rotation: {x: -0.036592554, y: -0.00007808208, z: 0.014013024, w: 0.999232}
+      scale: {x: 1.0000026, y: 1.0000023, z: 1.0000001}
+    - name: Stopa.L
+      parentName: Noga.L
+      position: {x: 0.000000001490116, y: 0.047652237, z: -3.7252902e-11}
+      rotation: {x: 0.65846497, y: -0.2899089, z: -0.17061159, w: 0.67325217}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000018}
+    - name: Stopa.L_end
+      parentName: Stopa.L
+      position: {x: -0, y: 0.020012833, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.005
+      parentName: Bone
+      position: {x: 3.259629e-11, y: 0.017382357, z: 6.160917e-11}
+      rotation: {x: 0.1911684, y: -0.022990592, z: -0.019856477, w: 0.98108715}
+      scale: {x: 1.0000006, y: 1, z: 0.99999994}
+    - name: Bone.006
+      parentName: Bone.005
+      position: {x: 9.3132255e-12, y: 0.013740277, z: -2.9598596e-10}
+      rotation: {x: -0.26087514, y: 0.0044038794, z: 0.01824977, w: 0.96519005}
+      scale: {x: 0.99999934, y: 1.0000002, z: 1}
+    - name: Bone.007
+      parentName: Bone.006
+      position: {x: -5.5879353e-11, y: 0.013883425, z: -3.405148e-10}
+      rotation: {x: -0.0785388, y: 0.00031199577, z: 0.009669349, w: 0.9968641}
+      scale: {x: 1.0000006, y: 0.99999976, z: 0.99999994}
+    - name: Bone.008
+      parentName: Bone.007
+      position: {x: 1.8626451e-11, y: 0.011809236, z: 0.0000000011362136}
+      rotation: {x: 0.111420944, y: -0.01090102, z: -0.02152373, w: 0.9934804}
+      scale: {x: 0.99999976, y: 1.0000004, z: 1.0000005}
+    - name: Bone.009
+      parentName: Bone.008
+      position: {x: 7.4505804e-11, y: 0.011390516, z: 9.126961e-10}
+      rotation: {x: 0.19821413, y: -0.02067524, z: -0.0049469485, w: 0.97992814}
+      scale: {x: 1.0000001, y: 0.9999995, z: 1.0000001}
+    - name: Bone.010
+      parentName: Bone.009
+      position: {x: -7.4505804e-11, y: 0.0092679635, z: -0.0000000058254224}
+      rotation: {x: -0.15038157, y: 0.064927705, z: -0.01764249, w: 0.986336}
+      scale: {x: 0.99999946, y: 1, z: 1.0000002}
+    - name: Bone.010_end
+      parentName: Bone.010
+      position: {x: -0, y: 0.02197282, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bark.L
+      parentName: Bone.008
+      position: {x: 7.4505804e-11, y: 0.011390516, z: 9.126961e-10}
+      rotation: {x: 0.13376354, y: -0.12540267, z: 0.7334312, w: 0.65456873}
+      scale: {x: 1.0000002, y: 1.0000007, z: 0.9999999}
+    - name: Ramie.L
+      parentName: Bark.L
+      position: {x: -0.000000002235174, y: 0.019444015, z: 9.685754e-10}
+      rotation: {x: -0.01937299, y: -0.0037572663, z: -0.03105741, w: 0.99932283}
+      scale: {x: 1.0000008, y: 1.0000006, z: 1.0000006}
+    - name: "R\u0119ka.L"
+      parentName: Ramie.L
+      position: {x: 0.000000007152557, y: 0.026568994, z: -0.0000000031292438}
+      rotation: {x: 0.04067814, y: 0.000114565686, z: -0.06107077, w: 0.99730426}
+      scale: {x: 1.0000006, y: 1.0000012, z: 0.99999934}
+    - name: "d\u0142o\u01441.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 7.45058e-10, y: 0.030218171, z: 5.587935e-10}
+      rotation: {x: 0.37138215, y: -0.017776879, z: -0.057759956, w: 0.9265112}
+      scale: {x: 1.0000012, y: 1.0000004, z: 1}
+    - name: Palce.015.L
+      parentName: "d\u0142o\u01441.L"
+      position: {x: -0.0000000015646219, y: 0.0076024304, z: -2.2351741e-10}
+      rotation: {x: -0.027135713, y: -0.0493323, z: 0.07368843, w: 0.9956907}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000001}
+    - name: Palce.016.L
+      parentName: Palce.015.L
+      position: {x: 5.2154064e-10, y: 0.0026952638, z: 8.9406965e-10}
+      rotation: {x: -0.024332494, y: 0.022066012, z: -0.030287094, w: 0.99900144}
+      scale: {x: 0.9999994, y: 0.9999997, z: 1.0000019}
+    - name: Palce.017.L
+      parentName: Palce.016.L
+      position: {x: 5.587935e-10, y: 0.0027980465, z: -0.000000002980232}
+      rotation: {x: -0.035484895, y: -0.07786559, z: 0.021120396, w: 0.9961083}
+      scale: {x: 1.0000024, y: 1.0000012, z: 1.0000002}
+    - name: Palce.017.L_end
+      parentName: Palce.017.L
+      position: {x: -0, y: 0.0045301127, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01442.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 7.45058e-10, y: 0.030218171, z: 5.587935e-10}
+      rotation: {x: 0.14386326, y: 0.026865652, z: -0.021614444, w: 0.98899674}
+      scale: {x: 1.0000011, y: 1.0000015, z: 0.99999917}
+    - name: Palce.019.L
+      parentName: "d\u0142o\u01442.L"
+      position: {x: 3.72529e-10, y: 0.011629004, z: 0.0000000011920929}
+      rotation: {x: -0.072746284, y: -0.16574796, z: 0.12622902, w: 0.9753471}
+      scale: {x: 1.000001, y: 0.99999946, z: 1.0000017}
+    - name: Palce.020.L
+      parentName: Palce.019.L
+      position: {x: -4.2840836e-10, y: 0.0037296477, z: 0.0000000020489097}
+      rotation: {x: -0.0027398458, y: 0.0121779265, z: 0.024366211, w: 0.99962527}
+      scale: {x: 1.0000005, y: 1.000001, z: 0.99999964}
+    - name: Palce.021.L
+      parentName: Palce.020.L
+      position: {x: -2.9802322e-10, y: 0.003402768, z: 7.8231094e-10}
+      rotation: {x: -0.05928226, y: 0.10197368, z: -0.03995831, w: 0.99221486}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.0000008}
+    - name: Palce.021.L_end
+      parentName: Palce.021.L
+      position: {x: -0, y: 0.003919291, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01443.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 7.45058e-10, y: 0.030218171, z: 5.587935e-10}
+      rotation: {x: 0.05951844, y: -0.055172082, z: 0.026516292, w: 0.9963486}
+      scale: {x: 1.000001, y: 1.0000007, z: 0.9999993}
+    - name: Palce.023.L
+      parentName: "d\u0142o\u01443.L"
+      position: {x: -8.1956386e-10, y: 0.011100173, z: 0.0000000024645124}
+      rotation: {x: -0.038366392, y: -0.025553904, z: 0.042370703, w: 0.99803793}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000005}
+    - name: Palce.024.L
+      parentName: Palce.023.L
+      position: {x: 2.0489097e-10, y: 0.0028496752, z: -0.0000000028312206}
+      rotation: {x: 0.0008210684, y: 0.0054295775, z: 0.041234206, w: 0.9991344}
+      scale: {x: 1.0000008, y: 1.0000006, z: 1.0000013}
+    - name: Palce.025.L
+      parentName: Palce.024.L
+      position: {x: -0.0000000012665987, y: 0.0041741347, z: 7.45058e-10}
+      rotation: {x: -0.022591488, y: -0.029773457, z: -0.104560465, w: 0.9938161}
+      scale: {x: 1.0000007, y: 1.0000001, z: 0.9999996}
+    - name: Palce.025.L_end
+      parentName: Palce.025.L
+      position: {x: -0, y: 0.004711182, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01444.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 7.45058e-10, y: 0.030218171, z: 5.587935e-10}
+      rotation: {x: -0.040067215, y: -0.01278945, z: 0.08542588, w: 0.99545646}
+      scale: {x: 1.0000011, y: 1.0000014, z: 0.99999934}
+    - name: Palce.027.L
+      parentName: "d\u0142o\u01444.L"
+      position: {x: -0.0000000019214348, y: 0.010549655, z: -4.4703483e-10}
+      rotation: {x: 0.04042453, y: 0.016543236, z: -0.038072746, w: 0.9983199}
+      scale: {x: 1.0000008, y: 1.0000005, z: 1.0000011}
+    - name: Palce.028.L
+      parentName: Palce.027.L
+      position: {x: 0.0000000017881393, y: 0.0031714654, z: -0.0000000012665987}
+      rotation: {x: -0.020438883, y: -0.07581897, z: -0.051146552, w: 0.9955992}
+      scale: {x: 1, y: 1.0000012, z: 0.9999996}
+    - name: Palce.029.L
+      parentName: Palce.028.L
+      position: {x: 7.45058e-10, y: 0.0030543325, z: 0}
+      rotation: {x: -0.000022521232, y: 0.047019996, z: 0.048362195, w: 0.9977225}
+      scale: {x: 1.000001, y: 1.0000005, z: 1.0000006}
+    - name: Palce.029.L_end
+      parentName: Palce.029.L
+      position: {x: -0, y: 0.005675772, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01445.L"
+      parentName: "R\u0119ka.L"
+      position: {x: 7.45058e-10, y: 0.030218171, z: 5.587935e-10}
+      rotation: {x: -0.1348869, y: -0.067372166, z: 0.16173433, w: 0.9752479}
+      scale: {x: 1.0000015, y: 1.000001, z: 0.99999934}
+    - name: Palce.031.L
+      parentName: "d\u0142o\u01445.L"
+      position: {x: -2.2351741e-10, y: 0.01032636, z: -0.000000002980232}
+      rotation: {x: 0.13876215, y: 0.07919446, z: -0.0946783, w: 0.9826034}
+      scale: {x: 0.99999994, y: 0.999999, z: 1.0000015}
+    - name: Palce.032.L
+      parentName: Palce.031.L
+      position: {x: 5.587935e-10, y: 0.003759, z: -5.2154064e-10}
+      rotation: {x: 0.005378885, y: 0.069971375, z: -0.09888963, w: 0.9926208}
+      scale: {x: 1.0000018, y: 1.0000007, z: 0.9999999}
+    - name: Palce.033.L
+      parentName: Palce.032.L
+      position: {x: 0.0000000017881393, y: 0.0023138341, z: -9.685754e-10}
+      rotation: {x: 0.020171275, y: -0.08093257, z: 0.054137647, w: 0.9950439}
+      scale: {x: 1.0000005, y: 1.0000017, z: 1.000001}
+    - name: Palce.033.L_end
+      parentName: Palce.033.L
+      position: {x: -0, y: 0.0038854044, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bark.R
+      parentName: Bone.008
+      position: {x: 0.0010555541, y: 0.011392315, z: -0.000052337375}
+      rotation: {x: 0.097064056, y: 0.1578926, z: -0.7380397, w: 0.64880353}
+      scale: {x: 0.9999994, y: 0.9999998, z: 0.99999934}
+    - name: Ramie.R
+      parentName: Bark.R
+      position: {x: 0.000000001490116, y: 0.019444011, z: -0.000000004786998}
+      rotation: {x: -0.019372929, y: 0.0037572891, z: 0.031057023, w: 0.9993228}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.0000005}
+    - name: "R\u0119ka.R"
+      parentName: Ramie.R
+      position: {x: -0.0000000011920929, y: 0.026569016, z: -0.000000001117587}
+      rotation: {x: 0.040678047, y: -0.000114607115, z: 0.06107105, w: 0.9973042}
+      scale: {x: 1.0000007, y: 1.0000014, z: 0.99999976}
+    - name: "d\u0142o\u01441.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -2.2351741e-10, y: 0.030218178, z: 4.842877e-10}
+      rotation: {x: 0.37138274, y: 0.017776445, z: 0.057758633, w: 0.9265111}
+      scale: {x: 1.0000004, y: 1.0000011, z: 1.0000001}
+    - name: Palce.015.R
+      parentName: "d\u0142o\u01441.R"
+      position: {x: 6.519258e-10, y: 0.0076024267, z: -0.0000000024959443}
+      rotation: {x: 0.027135687, y: -0.04933218, z: 0.073687054, w: -0.9956908}
+      scale: {x: 1.000001, y: 1.0000008, z: 1.0000005}
+    - name: Palce.016.R
+      parentName: Palce.015.R
+      position: {x: 8.9406965e-10, y: 0.0026952662, z: 0.0000000011920929}
+      rotation: {x: -0.024334215, y: -0.022065777, z: 0.030283498, w: 0.99900144}
+      scale: {x: 1.1615055, y: 1.1615046, z: 1.161505}
+    - name: Palce.017.R
+      parentName: Palce.016.R
+      position: {x: 4.2840836e-10, y: 0.0027980485, z: 0.0000000013038516}
+      rotation: {x: -0.0354815, y: 0.07786558, z: -0.021118816, w: 0.99610853}
+      scale: {x: 0.7215466, y: 0.7215467, z: 0.72154677}
+    - name: Palce.017.R_end
+      parentName: Palce.017.R
+      position: {x: -0, y: 0.0045301127, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01442.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -2.2351741e-10, y: 0.030218178, z: 4.842877e-10}
+      rotation: {x: 0.14386326, y: -0.026865644, z: 0.021614287, w: 0.98899674}
+      scale: {x: 1.0000001, y: 1.0000006, z: 0.99999976}
+    - name: Palce.019.R
+      parentName: "d\u0142o\u01442.R"
+      position: {x: -0.0000000029057263, y: 0.011629009, z: -6.705522e-10}
+      rotation: {x: -0.07274632, y: 0.16574821, z: -0.12622903, w: 0.97534704}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000007}
+    - name: Palce.020.R
+      parentName: Palce.019.R
+      position: {x: 0.0000000012665987, y: 0.0037296491, z: -0.0000000025704503}
+      rotation: {x: -0.0027398155, y: -0.012178117, z: -0.024366263, w: 0.9996252}
+      scale: {x: 1.0000005, y: 1.000001, z: 1.0000007}
+    - name: Palce.021.R
+      parentName: Palce.020.R
+      position: {x: -4.4703483e-10, y: 0.003402769, z: -1.4901161e-10}
+      rotation: {x: -0.059282158, y: -0.101973735, z: 0.039958406, w: 0.9922149}
+      scale: {x: 1.040977, y: 1.040977, z: 1.0409774}
+    - name: Palce.021.R_end
+      parentName: Palce.021.R
+      position: {x: -0, y: 0.003919291, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01443.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -2.2351741e-10, y: 0.030218178, z: 4.842877e-10}
+      rotation: {x: 0.05951847, y: 0.05517201, z: -0.026516484, w: 0.9963486}
+      scale: {x: 1.000001, y: 1.0000008, z: 0.99999964}
+    - name: Palce.023.R
+      parentName: "d\u0142o\u01443.R"
+      position: {x: -8.1956386e-10, y: 0.011100175, z: 3.72529e-10}
+      rotation: {x: -0.03836652, y: 0.025554162, z: -0.042370617, w: 0.99803793}
+      scale: {x: 1.0000019, y: 1.0000019, z: 1.0000002}
+    - name: Palce.024.R
+      parentName: Palce.023.R
+      position: {x: 9.685754e-10, y: 0.0028496762, z: -0.0000000026077032}
+      rotation: {x: 0.00082118396, y: -0.0054295724, z: -0.041234285, w: 0.9991344}
+      scale: {x: 1.0000006, y: 1, z: 1.0000007}
+    - name: Palce.025.R
+      parentName: Palce.024.R
+      position: {x: 3.108289e-10, y: 0.0041741356, z: 0.000000001117587}
+      rotation: {x: -0.02259156, y: 0.029773282, z: 0.10456045, w: 0.993816}
+      scale: {x: 1.1521903, y: 1.1521897, z: 1.1521889}
+    - name: Palce.025.R_end
+      parentName: Palce.025.R
+      position: {x: -0, y: 0.004711182, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01444.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -2.2351741e-10, y: 0.030218178, z: 4.842877e-10}
+      rotation: {x: -0.04006722, y: 0.012789502, z: -0.08542609, w: 0.99545646}
+      scale: {x: 1.0000005, y: 1.0000005, z: 0.9999997}
+    - name: Palce.027.R
+      parentName: "d\u0142o\u01444.R"
+      position: {x: -0.000000002980232, y: 0.010549657, z: -9.313226e-10}
+      rotation: {x: 0.040424556, y: -0.01654325, z: 0.038072906, w: 0.99832}
+      scale: {x: 1.0000018, y: 1.0000014, z: 1.000001}
+    - name: Palce.028.R
+      parentName: Palce.027.R
+      position: {x: -0.0000000025331974, y: 0.0031714668, z: 1.4901161e-10}
+      rotation: {x: -0.020438928, y: 0.07581912, z: 0.05114655, w: 0.9955992}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000002}
+    - name: Palce.029.R
+      parentName: Palce.028.R
+      position: {x: 7.45058e-10, y: 0.0030543315, z: -2.2351741e-10}
+      rotation: {x: -0.000022519367, y: -0.047020175, z: -0.048362345, w: 0.99772257}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000012}
+    - name: Palce.029.R_end
+      parentName: Palce.029.R
+      position: {x: -0, y: 0.005675772, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "d\u0142o\u01445.R"
+      parentName: "R\u0119ka.R"
+      position: {x: -2.2351741e-10, y: 0.030218178, z: 4.842877e-10}
+      rotation: {x: -0.13488694, y: 0.06737234, z: -0.16173457, w: 0.97524786}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000001}
+    - name: Palce.031.R
+      parentName: "d\u0142o\u01445.R"
+      position: {x: 0.0000000011920929, y: 0.01032636, z: -0.0000000023841857}
+      rotation: {x: 0.1387621, y: -0.0791946, z: 0.094678275, w: 0.98260343}
+      scale: {x: 1, y: 1.0000001, z: 1.0000008}
+    - name: Palce.032.R
+      parentName: Palce.031.R
+      position: {x: -5.9604643e-10, y: 0.003759002, z: 0.000000001490116}
+      rotation: {x: 0.005379049, y: -0.06997138, z: 0.09888966, w: 0.99262077}
+      scale: {x: 1.0000021, y: 1.0000013, z: 1.0000002}
+    - name: Palce.033.R
+      parentName: Palce.032.R
+      position: {x: -8.9406965e-10, y: 0.0023138367, z: -1.6763806e-10}
+      rotation: {x: 0.020171307, y: 0.08093272, z: -0.05413776, w: 0.9950438}
+      scale: {x: 1.0000008, y: 1.0000015, z: 1.0000006}
+    - name: Palce.033.R_end
+      parentName: Palce.033.R
+      position: {x: -0, y: 0.0038854044, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip.R
+      parentName: Bone
+      position: {x: -0.000067996654, y: 0.017384538, z: -0.00000056408976}
+      rotation: {x: 0.026430812, y: 0.113159284, z: 0.8949679, w: -0.43073052}
+      scale: {x: 1.0000015, y: 1.0000017, z: 0.99999964}
+    - name: Udo.R
+      parentName: hip.R
+      position: {x: 0.0000000014156103, y: 0.01156796, z: -1.862645e-10}
+      rotation: {x: -0.16284025, y: -0.058403924, z: -0.42464238, w: 0.88867927}
+      scale: {x: 1.0000018, y: 1.0000018, z: 1}
+    - name: Noga.R
+      parentName: Udo.R
+      position: {x: -0.00000000346452, y: 0.04407211, z: -0.0000000017695129}
+      rotation: {x: -0.036592543, y: 0.000078089535, z: -0.014012925, w: 0.99923205}
+      scale: {x: 1.0000032, y: 1.0000037, z: 1.0000005}
+    - name: Stopa.R
+      parentName: Noga.R
+      position: {x: 7.4505804e-11, y: 0.047652233, z: -0.000000001117587}
+      rotation: {x: 0.65846497, y: 0.28990886, z: 0.17061149, w: 0.6732522}
+      scale: {x: 1.0000011, y: 1.000001, z: 1.0000012}
+    - name: Stopa.R_end
+      parentName: Stopa.R
+      position: {x: -0, y: 0.020012833, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IKarm.L
+      parentName: Armature
+      position: {x: -0.030236235, y: 0.0056867558, z: -0.002057805}
+      rotation: {x: 0.8092614, y: -0.000000029802326, z: 0.5874488, w: 0}
+      scale: {x: 1.0000004, y: 1, z: 1.0000006}
+    - name: IKarm.L_end
+      parentName: IKarm.L
+      position: {x: -0, y: 0.02011527, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK.L
+      parentName: Armature
+      position: {x: -0.008450865, y: 0.010738058, z: -0.08468166}
+      rotation: {x: -0.015256964, y: -0.99680096, z: 0.017787367, w: 0.0764112}
+      scale: {x: 1.0000014, y: 0.99999976, z: 1}
+    - name: IK.L_end
+      parentName: IK.L
+      position: {x: -0, y: 0.015333664, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PV.L
+      parentName: Armature
+      position: {x: -0.009803665, y: -0.011608691, z: -0.03715409}
+      rotation: {x: -0.09522697, y: -0.0000001192093, z: 0.9954556, w: 0.0000000074505815}
+      scale: {x: 1.0000014, y: 1.0000007, z: 1}
+    - name: PV.L_end
+      parentName: PV.L
+      position: {x: -0, y: 0.017290339, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK.R
+      parentName: Armature
+      position: {x: 0.008450865, y: 0.010738058, z: -0.08468166}
+      rotation: {x: 0.015256964, y: -0.99680096, z: 0.017787367, w: -0.0764112}
+      scale: {x: 1.0000014, y: 0.99999976, z: 1}
+    - name: IK.R_end
+      parentName: IK.R
+      position: {x: -0, y: 0.015333664, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PV.R
+      parentName: Armature
+      position: {x: 0.009803665, y: -0.011608691, z: -0.03715409}
+      rotation: {x: 0.09522697, y: -0.0000001192093, z: 0.9954556, w: -0.0000000074505815}
+      scale: {x: 1.0000014, y: 1.0000007, z: 1}
+    - name: PV.R_end
+      parentName: PV.R
+      position: {x: -0, y: 0.017290339, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PVarm.L
+      parentName: Armature
+      position: {x: -0.04620381, y: 0.04704401, z: 0.058688886}
+      rotation: {x: 0.00000005960465, y: -0.8186006, z: -0.000000089406974, w: 0.5743633}
+      scale: {x: 1.0000004, y: 1, z: 1.0000006}
+    - name: PVarm.L_end
+      parentName: PVarm.L
+      position: {x: -0, y: 0.02358942, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IKarm.R
+      parentName: Armature
+      position: {x: 0.028131513, y: 0.0042844913, z: -0.0011665248}
+      rotation: {x: 0.8092614, y: 0.000000029802326, z: -0.5874488, w: 0}
+      scale: {x: 1.0000004, y: 1, z: 1.0000006}
+    - name: IKarm.R_end
+      parentName: IKarm.R
+      position: {x: -0, y: 0.02011527, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PVarm.R
+      parentName: Armature
+      position: {x: 0.04620381, y: 0.04704401, z: 0.058688886}
+      rotation: {x: -0.00000005960465, y: -0.8186006, z: -0.000000089406974, w: -0.5743633}
+      scale: {x: 1.0000004, y: 1, z: 1.0000006}
+    - name: PVarm.R_end
+      parentName: PVarm.R
+      position: {x: -0, y: 0.02358942, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MocapGuy_Body
+      parentName: Parkour_Animacje (1)(Clone)
+      position: {x: 1.850939, y: 0.0000076293945, z: -0.0000042915344}
+      rotation: {x: -0.008341733, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 100, y: 99.99998, z: 99.99998}
+    - name: MocapGuy_BrowsLashes
+      parentName: Parkour_Animacje (1)(Clone)
+      position: {x: 1.8509392, y: 0.0000076293945, z: -0.0000042915344}
+      rotation: {x: -0.008341674, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 100, y: 99.99998, z: 99.99998}
+    - name: MocapGuy_Caruncula
+      parentName: Parkour_Animacje (1)(Clone)
+      position: {x: 1.8509398, y: 0.0000076293945, z: -0.0000014305115}
+      rotation: {x: -0.008341674, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 100, y: 100, z: 100}
+    - name: MocapGuy_Eyes
+      parentName: Parkour_Animacje (1)(Clone)
+      position: {x: 1.8509392, y: 0.0000076293945, z: -0.0000042915344}
+      rotation: {x: -0.008341674, y: 0, z: -0, w: 0.99996525}
+      scale: {x: 100, y: 99.99998, z: 99.99998}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
