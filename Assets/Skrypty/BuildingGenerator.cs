@@ -123,7 +123,6 @@ public class BuildingGenerator : MonoBehaviour
         Debug.Log($"Zakończono! Wygenerowano {graph.roofPoints.Count} budynków.");
     }
 
-
     bool IsBuildingPixel(Color c)
     {
         Color.RGBToHSV(c, out float hue, out float sat, out float val);

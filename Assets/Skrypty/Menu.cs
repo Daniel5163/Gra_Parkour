@@ -9,7 +9,9 @@ public class Menu : MonoBehaviour
     public Button playbutton;
     public Button optionbutton;
     public Canvas menucanvas;
+    
     public Canvas selectlevelcanvas;
+
     void Start()
     {
         menucanvas.gameObject.SetActive(true);
@@ -19,7 +21,7 @@ public class Menu : MonoBehaviour
        
 
         playbutton.onClick.AddListener(Play);
-        optionbutton.onClick.AddListener(Option);
+        optionbutton.onClick.AddListener(Options);
      
     }
 
@@ -29,10 +31,17 @@ public class Menu : MonoBehaviour
         selectlevelcanvas.gameObject.SetActive(true);
     }
 
-    public void Option()
+    void Options()
     {
+        menucanvas.gameObject.SetActive(false);
 
+        OptionsCanvas.Instance.Show(() =>
+        {
+            menucanvas.gameObject.SetActive(true);
+        });
     }
 
-   
+
+
+
 }
